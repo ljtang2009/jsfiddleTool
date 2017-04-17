@@ -3,5 +3,8 @@
  */
 
 (function () {
-    alert('console');
+    var console = {};
+    console.log = function(output){
+        $('#console').append(output+'<br/>');
+    };
 })();
